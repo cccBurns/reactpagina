@@ -12,7 +12,7 @@ export const NavBar = () => {
                 </div>
                 <ul className="nav__list">
                     <li>
-                        <NavLink className="nav__link" to='/categoria/Nvidia'>Nvidia</NavLink>
+                        <NavLink className="nav__link" to='/categoria/Nvidias'>Nvidia</NavLink>
                     </li>
                     <li>
                         <NavLink className="nav__link" to='/categoria/Amd'>AMD</NavLink>
