@@ -7,5 +7,4 @@ const ItemList = ({ data = [] }) => {
     );
 }
 
-
 export default ItemList;

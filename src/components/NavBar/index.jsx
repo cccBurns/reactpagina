@@ -16,7 +16,8 @@ export const NavBar = () => {
                     </li>
                     <li>
                         <NavLink className="nav__link" to='/categoria/Amd'>AMD</NavLink>
-                    </li>
+                    </li>      
+                    
                     <li>
                         <NavLink className="nav__link" to='cart'>
                                 <CartWidget />
