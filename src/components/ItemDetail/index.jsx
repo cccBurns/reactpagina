@@ -23,7 +23,7 @@ export const ItemDetail = ({ data }) => {
                     {
                       goToCart
                         ? <Link to='/cart'>Terminar compra</Link>
-                        : <ItemCount initial={3} stock={5} onAdd={onAdd} />
+                        : <ItemCount initial={1} stock={5} onAdd={onAdd} />
                     }
                 </div>
             </div>
