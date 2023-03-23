@@ -9,9 +9,10 @@ export const NavBar = () => {
         <div className="">
             <nav className="nav">
                 <div className="nav__brand">
-                    <NavLink className="nav__links" to='/'>GraphicShop</NavLink>
+                    <NavLink className="nav__links" to='/'>Graphic Shop</NavLink>
                 </div>
                 <ul className="nav__list">
+                    <p className='productos'>Productos: </p>
                     <li>
                         <NavLink className="nav__link" to='/categoria/Nvidias'>Nvidia</NavLink>
                     </li>
