@@ -12,10 +12,12 @@ export const ItemListContainer = ({ texto }) => {
     useEffect(() => {
         const querydb = getFirestore();
         const queryCollection = collection(querydb, 'products');
-        if (categoriaId) {
+        
+        if (categoriaId ) {
+            console.log(categoriaId);
             const queryFilter = query(queryCollection, where('category','==', categoriaId))
             getDocs(queryFilter)
-                .them(res => setData(res.docs.map(product => ({id: product.id, ...product.data() }))))
+                .then(res => setData(res.docs.map(product => ({id: product.id, ...product.data() }))))
         } else {
             getDocs(queryCollection)
                 .then(res => setData(res.docs.map(product => ({ id: product.id, ...product.data() }))))      
@@ -24,7 +26,7 @@ export const ItemListContainer = ({ texto }) => {
     }, [categoriaId])
 
   
-
+    console.log(data)
     return (
         <>
             <Title greeting={texto} />            

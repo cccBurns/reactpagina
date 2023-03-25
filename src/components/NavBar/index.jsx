@@ -14,7 +14,7 @@ export const NavBar = () => {
                 <ul className="nav__list">
                     <p className='productos'>Productos: </p>
                     <li>
-                        <NavLink className="nav__link" to='/categoria/Nvidias'>Nvidia</NavLink>
+                        <NavLink className="nav__link" to='/categoria/Nvidia'>Nvidia</NavLink>
                     </li>
                     <li>
                         <NavLink className="nav__link" to='/categoria/Amd'>AMD</NavLink>

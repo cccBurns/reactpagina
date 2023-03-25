@@ -13,13 +13,14 @@ export const ItemDetail = ({ data }) => {
         setGoToCart(true);
         addProduct(data, quantity);
     }
-
+    console.log(data);
     return (
         <div className="container">
             <div className="detail">
                 <img className='detail__image' src={data.image} alt="" />
                 <div className="content">
                     <h1>{data.title}</h1>
+                    <h3>{data.detalle}</h3>
                     {
                       goToCart
                         ? <Link to='/cart'>Terminar compra</Link>

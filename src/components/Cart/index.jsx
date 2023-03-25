@@ -22,7 +22,7 @@ const Cart = () => {
         const db = getFirestore();
         const ordersCollection = collection(db, 'orders');
         addDoc(ordersCollection, order)
-        .then(({ id }) => console.log(id))
+        .then(({ id }) => alert('COMPRA REALIZADA'))
     }
 
     if (cart.length === 0) {
@@ -42,7 +42,7 @@ const Cart = () => {
             <p>
                 total: {totalPrice()}
             </p>
-            <button onClick={handleClick}>Emitir compra</button>
+            <button onClick={handleClick}>Finalizar compra</button>
         </>
     )
 }
